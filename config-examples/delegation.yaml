@@ -1,0 +1,5 @@
+# Chapter 5, section 5.2 — route helper (subagent) work to a cheaper model.
+# Merge into ~/.hermes/config.yaml. Model names change; pick a current fast model.
+delegation:
+  model: "google/gemini-3-flash-preview"
+  provider: "openrouter"

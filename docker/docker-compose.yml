@@ -1,0 +1,20 @@
+# Chapter 10, section 10.4 — the official Hermes image on a small server.
+# First run once:  docker compose run --rm hermes setup
+# Then:            docker compose up -d
+# Upgrade:         docker compose pull && docker compose up -d
+services:
+  hermes:
+    image: nousresearch/hermes-agent:stable   # tested releases; or pin a version such as :v0.22.0
+    container_name: hermes
+    restart: unless-stopped
+    command: gateway run
+    volumes:
+      - ~/.hermes:/opt/data        # ALL your data lives here, outside the container. Never remove this line.
+    # No ports are published: a messaging-only agent does not need any.
+    # Only add "8642:8642" (API) or "9119:9119" (dashboard) if you have a reason,
+    # and never on a public address without a login (Chapter 9, section 9.8).
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+          cpus: "2.0"

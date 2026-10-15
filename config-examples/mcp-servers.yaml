@@ -1,0 +1,13 @@
+# Chapter 6, section 6.2 — two MCP servers, each given the least access it needs.
+# Merge into ~/.hermes/config.yaml, then type /reload-mcp in a chat.
+mcp_servers:
+  workspace:
+    command: "npx"
+    args: ["-y", "@modelcontextprotocol/server-filesystem", "/Users/yourname/Projects/Workspace"]
+  github:
+    command: "npx"
+    args: ["-y", "@modelcontextprotocol/server-github"]
+    env:
+      GITHUB_PERSONAL_ACCESS_TOKEN: "your_github_token_here"   # a read-only token made just for Hermes
+    tools:
+      include: ["list_issues", "get_issue"]                    # only these tools are visible to Hermes
