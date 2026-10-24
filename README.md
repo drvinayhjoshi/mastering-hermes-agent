@@ -1,10 +1,10 @@
 # Mastering Hermes Agent: Companion Repository
 
-The downloadable companion to *Mastering Hermes Agent: Build Your AI Assistant for Small Business* by Vinay Joshi.
+The downloadable companion to *Mastering Hermes Agent: 25 Practical Automations for Small Businesses* by Dr. Vinay Joshi.
 
 Everything here is plain text. Download rather than retype: it saves time, and it avoids the one typo that breaks a configuration file.
 
-**Tested against Hermes Agent v0.22.0 on 14 October 2026.** Skills are version 1.2.0, identical to the files printed in the book. If a command no longer works, check [ERRATA.md](ERRATA.md) first.
+**Tested against Hermes Agent v0.22.5 on October 24, 2026.** Eleven skills were rewritten after a first test and then tested three times; the other twenty-one were tested once and are unchanged. Each skill's status is in its INDEX file and in Appendix G.7 of the book. The skills printed in the book are identical to the files here. If a command no longer works, check [ERRATA.md](ERRATA.md) first.
 
 ## What's here
 

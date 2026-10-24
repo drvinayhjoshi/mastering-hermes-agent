@@ -1,7 +1,7 @@
 # Chapter 9, section 9.3 — approval settings with your own deny rules.
 # Merge into ~/.hermes/config.yaml. Patterns are case-insensitive; quote them.
 approvals:
-  mode: manual          # ask before every command; recommended for your first fortnight (default: smart)
+  mode: manual          # ask before every command; recommended for your first two weeks (default: smart)
   cron_mode: deny       # scheduled jobs refuse dangerous commands (this is the default)
   deny:
     - "git push --force*"

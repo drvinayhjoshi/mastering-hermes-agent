@@ -6,7 +6,7 @@ From *Mastering Hermes Agent*, Chapter 4. One rung of the Delegation Ladder per 
 | --- | --- | --- | --- | --- |
 | 1 | Delegate and Verify | | | |
 | 2 | Remember | | | |
-| 3 | Standardise | | | |
+| 3 | Standardize | | | |
 | 4 | Schedule | | | |
 | Month 2 | Expand | | | |
 
